@@ -27,7 +27,7 @@ export const styles = {
 
     containerLogin1: {
         minHeight: '100vh',
-        background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+        background: 'linear-gradient(135deg, #222a64ff 0%, #192161 100%)',
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
@@ -144,7 +144,7 @@ export const styles = {
     // Estilos para Tela de Inspeção
     containerInspecao: {
         minHeight: '100vh',
-        background: '#f5f5f5',
+        background: '#192161',
         padding: '20px',
         fontFamily: 'Arial, sans-serif'
     }
