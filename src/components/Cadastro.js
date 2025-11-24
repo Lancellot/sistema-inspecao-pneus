@@ -17,7 +17,9 @@ function Cadastro({ setTelaAtual }) {
 
     return (
         <div style={styles.containerLogin}>
-            <div style={styles.bglogin}></div>
+            <div style={styles.bglogin}>
+                <img src={logo} alt="Logo" style={styles.logo} />
+            </div>
             <div style={styles.cardLogin}>
                 <h1 style={styles.tituloLogin}>Cadastro de Usuário</h1>
                 <div style={styles.formDiv}>

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { styles } from '../styles/styles';
+import logo from '../assets/logos/logo-pneu.png';
 
 function Login({ setTelaAtual, setUsuarioLogado }) {
     const [email, setEmail] = useState('');
@@ -17,7 +18,9 @@ function Login({ setTelaAtual, setUsuarioLogado }) {
     return (
         
         <div style={styles.containerLogin}>
-            <div style={styles.bglogin}></div>
+            <div style={styles.bglogin}>
+                <img src={logo} alt="Logo" style={styles.logo} />
+            </div>
             <div style={styles.cardLogin}>
                 <h1 style={styles.tituloLogin}> Sistema de Inspeção de Pneus</h1>
                 <div style={styles.formDiv}>
