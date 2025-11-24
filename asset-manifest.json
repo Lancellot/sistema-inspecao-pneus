@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.js": "/sistema-inspecao-pneus/static/js/main.31dd2538.js",
+    "main.js": "/sistema-inspecao-pneus/static/js/main.1899089a.js",
     "static/media/logo-pneu.png": "/sistema-inspecao-pneus/static/media/logo-pneu.74f113fd887934ba8be6.png",
     "index.html": "/sistema-inspecao-pneus/index.html",
-    "main.31dd2538.js.map": "/sistema-inspecao-pneus/static/js/main.31dd2538.js.map"
+    "main.1899089a.js.map": "/sistema-inspecao-pneus/static/js/main.1899089a.js.map"
   },
   "entrypoints": [
-    "static/js/main.31dd2538.js"
+    "static/js/main.1899089a.js"
   ]
 }
