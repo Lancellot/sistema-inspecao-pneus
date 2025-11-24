@@ -122,6 +122,7 @@ function TelaInspecao({ inspecaoAtual, setInspecaoAtual, setTelaAtual, setInspec
                         <div style={styles.pneuBox}>
                             <button style={styles.botaoPneu}>Pneu 1A</button>
                             <button onClick={() => adicionarRecapagem('1A')} style={styles.botaoAcao}>ADD RECAP</button>
+                            <button onClick={() => adicionarMovimentacao('1A')} style={styles.botaoAcao}>ADD MOV</button>
                             {inspecaoAtual.pneus['1A'].recapagens.map((r, i) => (
                                 <div key={i} style={styles.itemAdicionado}>{r}</div>
                             ))}

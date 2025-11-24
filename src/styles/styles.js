@@ -272,17 +272,18 @@ export const styles = {
     ,
     conectoresVertical: {
         width: '2px',
-        height: '40px',
+        height: '100px',
         background: '#000'
     }
 
     ,
     conectoresHorizontal: {
-        width: '80px',
+        width: '180px',
         height: '2px',
         background: '#000',
         alignSelf: 'center',
-        marginTop: '60px'
+        marginTop: '60px',
+        marginBottom: '60px'
     }
 
     ,
