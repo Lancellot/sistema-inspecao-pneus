@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { styles } from '../styles/styles';
+import logo from '../assets/logos/logo-pneu.png';
 
 function Cadastro({ setTelaAtual }) {
     const [nome, setNome] = useState('');

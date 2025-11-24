@@ -11,18 +11,18 @@ export const styles = {
     },
     logo: {
         width: '100%',
-        height: '100%',
+        height: '80%',
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center'
     },
     img: {
-        width: '150px'
+        width: '100px'
     },
     bglogin: {
         width: '40%',
         height: '100vh',
-        background: 'linear-gradient(135deg, #ead8d8ff 0%, #6a12c3ff 100%)'
+        background: 'linear-gradient(135deg, #222a64ff 0%, #192161 100%)'
     },
 
     containerLogin1: {
