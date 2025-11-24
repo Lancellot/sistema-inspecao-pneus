@@ -1,70 +1,130 @@
-# Getting Started with Create React App
+# Sistema de Inspeção de Pneus
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Projeto front-end em React para gerenciar inspeções de pneus — telas de cadastro, histórico, relatórios e uma interface para inspeção.
 
-## Available Scripts
+Este repositório foi criado com Create React App. O README abaixo fornece instruções rápidas para instalar, executar, testar e gerar o build do projeto.
 
-In the project directory, you can run:
+## Sumário
 
-### `npm start`
+- Sobre
+- Requisitos
+- Instalação
+- Desenvolvimento (rodar localmente)
+- Build e Deploy
+- Testes
+- Estrutura do projeto
+- Contribuição
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Requisitos
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Node.js (recomendado >= 16)
+- npm (ou yarn) — este projeto usa npm nos exemplos
 
-### `npm test`
+Verifique sua versão com:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```bash
+node --version
+npm --version
+```
 
-### `npm run build`
+## Instalação
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+No diretório do projeto, instale as dependências:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+npm install
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Rodando em desenvolvimento
 
-### `npm run eject`
+Inicie a aplicação em modo de desenvolvimento (porta padrão 3000):
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```bash
+npm start
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Abra http://localhost:3000 no navegador. O app fará hot-reload quando você alterar arquivos.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Build para produção
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Gera os arquivos otimizados na pasta `build/`:
 
-## Learn More
+```bash
+npm run build
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Se você quiser publicar no GitHub Pages este repositório já vem configurado com a dependência `gh-pages` e o script `deploy` — o comando executa `predeploy` (build) e depois publica a pasta `build`:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+npm run deploy
+```
 
-### Code Splitting
+Nota: verifique o campo `homepage` no `package.json` — ele aponta para o endereço onde o app será servido.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Testes
 
-### Analyzing the Bundle Size
+Executa o test runner (Jest + React Testing Library):
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```bash
+npm test
+```
 
-### Making a Progressive Web App
+## Scripts úteis (do `package.json`)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- `start` — inicia servidor de dev (react-scripts start)
+- `build` — cria build de produção (react-scripts build)
+- `predeploy` — roda antes do `deploy` (executa build)
+- `deploy` — publica usando `gh-pages` (gh-pages -d build)
+- `test` — executa testes (react-scripts test)
+- `eject` — expõe configurações do CRA (use com cuidado)
 
-### Advanced Configuration
+## Estrutura do projeto
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Base: `c:\Users\Assis\projetos\ulbra\sistema-inspecao-pneus`
 
-### Deployment
+- `.gitignore` — arquivos ignorados pelo Git
+- `package.json` / `package-lock.json` — dependências e scripts
+- `public/` — assets públicos (index.html, ícones, manifest)
+- `src/` — código-fonte React
+	- `index.js` — ponto de entrada
+	- `App.js` — componente principal
+	- `App.css`, `index.css` — estilos
+	- `reportWebVitals.js`, `setupTests.js` — telemetria e configuração de testes
+	- `styles/styles.js` — estilos em JS
+	- `components/` — componentes da aplicação
+		- `Cadastro.js` — tela de cadastro
+		- `Historico.js` — histórico de inspeções
+		- `login.js` — login
+		- `Menu.js` — menu de navegação
+		- `Relatorios.js` — relatórios
+		- `TelaInspecao.js` — interface de inspeção
+- `build/` — arquivos gerados pelo build (para deploy)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Contribuindo
 
-### `npm run build` fails to minify
+1. Faça um fork do repositório
+2. Crie uma branch feature: `git checkout -b feature/minha-melhora`
+3. Faça commits claros e atômicos
+4. Abra um Pull Request descrevendo a mudança
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Antes de subir PR, execute os testes e verifique a aplicação localmente.
+
+## Observações / Próximos passos sugeridos
+
+- Adicionar um arquivo `CONTRIBUTING.md` com padrões de commit e fluxo de trabalho.
+- Configurar CI (GitHub Actions) para rodar testes e lint automaticamente.
+- Adicionar ESLint/Prettier se desejar padronizar estilo de código.
+
+## Licença
+
+Adicione aqui a licença do projeto (por exemplo, MIT) ou deixe explícito que é propriedade do autor/empresa.
+
+---
+
+Se quiser, eu posso:
+
+- adicionar um `CONTRIBUTING.md` e `CODE_OF_CONDUCT.md`;
+- configurar um workflow simples do GitHub Actions para rodar testes;
+- adicionar um `Dockerfile` para empacotar a app.
+
+Diga qual item prefere que eu faça em seguida.
