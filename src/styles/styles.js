@@ -56,9 +56,9 @@ export const styles = {
         borderRadius: '10px',
         padding: '30px',
         maxWidth: '450px',
-        width: '100%',
+        width: '90%',
         boxShadow: '0 10px 40px rgba(0,0,0,0.2)',
-        margin: '10px 0 10px 200px',
+        margin: '20px auto',
 
     },
     tituloLogin: {
