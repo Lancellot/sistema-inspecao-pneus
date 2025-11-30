@@ -10,7 +10,7 @@ function App() {
   const [telaAtual, setTelaAtual] = useState('login');
   const [usuarioLogado, setUsuarioLogado] = useState(null);
   const [inspecoes, setInspecoes] = useState([]);
-  
+
   // Estado para a inspeção atual
   const [inspecaoAtual, setInspecaoAtual] = useState({
     placaCaminhao: '',
@@ -25,49 +25,61 @@ function App() {
       '3A': { movimentacoes: [], recapagens: [] },
       '3B': { movimentacoes: [], recapagens: [] },
       '4A': { movimentacoes: [], recapagens: [] },
-      '4B': { movimentacoes: [], recapagens: [] }
+      '4B': { movimentacoes: [], recapagens: [] },
     },
-    observacoes: ''
+    observacoes: '',
   });
 
   // Renderizar tela atual
   const renderizarTela = () => {
-    switch(telaAtual) {
-      case 'login': 
+    switch (telaAtual) {
+      case 'login':
         return <Login setTelaAtual={setTelaAtual} setUsuarioLogado={setUsuarioLogado} />;
-      
-      case 'cadastro': 
+
+      case 'cadastro':
         return <Cadastro setTelaAtual={setTelaAtual} />;
-      
-      case 'menu': 
-        return <Menu 
-          usuarioLogado={usuarioLogado} 
-          setTelaAtual={setTelaAtual} 
-          setUsuarioLogado={setUsuarioLogado} 
-        />;
-      
-      case 'inspecao': 
-        return <TelaInspecao 
-          inspecaoAtual={inspecaoAtual}
-          setInspecaoAtual={setInspecaoAtual}
-          setTelaAtual={setTelaAtual}
-          setInspecoes={setInspecoes}
-          inspecoes={inspecoes}
-        />;
-      
-      case 'historico': 
-        return <Historico 
-          inspecoes={inspecoes} 
-          setTelaAtual={setTelaAtual} 
-        />;
-      
-      case 'relatorios': 
-        return <Relatorios 
-          inspecoes={inspecoes} 
-          setTelaAtual={setTelaAtual} 
-        />;
-      
-      default: 
+
+      case 'menu':
+        return (
+          <Menu
+            usuarioLogado={usuarioLogado}
+            setTelaAtual={setTelaAtual}
+            setUsuarioLogado={setUsuarioLogado}
+          />
+        );
+
+      case 'inspecao':
+        return (
+          <TelaInspecao
+            inspecaoAtual={inspecaoAtual}
+            setInspecaoAtual={setInspecaoAtual}
+            setTelaAtual={setTelaAtual}
+            setInspecoes={setInspecoes}
+            inspecoes={inspecoes}
+          />
+        );
+
+      case 'historico':
+        return (
+          <Historico
+            inspecoes={inspecoes}
+            setTelaAtual={setTelaAtual}
+            usuario={usuarioLogado}
+            setUsuarioLogado={setUsuarioLogado}
+          />
+        );
+
+      case 'relatorios':
+        return (
+          <Relatorios
+            inspecoes={inspecoes}
+            setTelaAtual={setTelaAtual}
+            usuario={usuarioLogado}
+            setUsuarioLogado={setUsuarioLogado}
+          />
+        );
+
+      default:
         return <Login setTelaAtual={setTelaAtual} setUsuarioLogado={setUsuarioLogado} />;
     }
   };

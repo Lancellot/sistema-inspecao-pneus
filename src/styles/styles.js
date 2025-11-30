@@ -1,402 +1,414 @@
-
 export const styles = {
+  // Estilos para Login/Menu
+  containerLogin: {
+    minHeight: '100vh',
+    display: 'flex',
+    padding: 0,
+    background: '#f5f5f5',
+    fontFamily: 'Arial, sans-serif',
+  },
+  logo: {
+    width: '100%',
+    height: '80%',
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  img: {
+    width: '100px',
+  },
+  bglogin: {
+    width: '40%',
+    height: '100vh',
+    background: 'linear-gradient(135deg, #222a64ff 0%, #192161 100%)',
+  },
 
-    // Estilos para Login/Menu
-    containerLogin: {
-        minHeight: '100vh',
-        display: 'flex',
-        padding: 0,
-        background: '#f5f5f5',
-        fontFamily: 'Arial, sans-serif'
-    },
-    logo: {
-        width: '100%',
-        height: '80%',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center'
-    },
-    img: {
-        width: '100px'
-    },
-    bglogin: {
-        width: '40%',
-        height: '100vh',
-        background: 'linear-gradient(135deg, #222a64ff 0%, #192161 100%)'
-    },
+  containerLogin1: {
+    minHeight: '100vh',
+    background: 'linear-gradient(135deg, #222a64ff 0%, #192161 100%)',
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    padding: '20px',
+    fontFamily: 'Arial, sans-serif',
+  },
+  cardLogin1: {
+    background: 'white',
+    borderRadius: '10px',
+    padding: '30px',
+    maxWidth: '500px',
+    width: '100%',
+    boxShadow: '0 10px 40px rgba(0,0,0,0.2)',
+  },
 
-    containerLogin1: {
-        minHeight: '100vh',
-        background: 'linear-gradient(135deg, #222a64ff 0%, #192161 100%)',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        padding: '20px',
-        fontFamily: 'Arial, sans-serif'
-    },
-    cardLogin1: {
-        background: 'white',
-        borderRadius: '10px',
-        padding: '30px',
-        maxWidth: '500px',
-        width: '100%',
-        boxShadow: '0 10px 40px rgba(0,0,0,0.2)'
-    },
+  cardContainer: {
+    width: '100%',
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    margin: '15px',
+  },
 
-    cardContainer: {
-        width: '100%',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        margin: '15px'
-    },
+  cardLogin: {
+    background: 'white',
+    borderRadius: '10px',
+    padding: '30px',
+    maxWidth: '450px',
+    width: '90%',
+    boxShadow: '0 10px 40px rgba(0,0,0,0.2)',
+    margin: '20px auto',
+  },
+  tituloLogin: {
+    textAlign: 'center',
+    color: '#333',
+    marginBottom: '20px',
+  },
 
-    cardLogin: {
-        background: 'white',
-        borderRadius: '10px',
-        padding: '30px',
-        maxWidth: '450px',
-        width: '90%',
-        boxShadow: '0 10px 40px rgba(0,0,0,0.2)',
-        margin: '20px auto',
+  formDiv: {
+    display: 'flex',
+    flexDirection: 'column',
+    gap: '15px',
+  },
 
-    },
-    tituloLogin: {
-        textAlign: 'center',
-        color: '#333',
-        marginBottom: '20px'
-    }
+  inputGroup: {
+    display: 'flex',
+    flexDirection: 'column',
+  },
 
-    ,
-    formDiv: {
-        display: 'flex',
-        flexDirection: 'column',
-        gap: '15px'
-    }
+  label: {
+    marginBottom: '5px',
+    color: '#555',
+    fontWeight: 'bold',
+  },
 
-    ,
-    inputGroup: {
-        display: 'flex',
-        flexDirection: 'column'
-    }
+  input: {
+    padding: '10px',
+    border: '2px solid #ddd',
+    borderRadius: '5px',
+    fontSize: '16px',
+  },
 
-    ,
-    label: {
-        marginBottom: '5px',
-        color: '#555',
-        fontWeight: 'bold'
-    }
+  botao: {
+    padding: '12px',
+    background: '#667eea',
+    color: 'white',
+    border: 'none',
+    borderRadius: '5px',
+    fontSize: '16px',
+    cursor: 'pointer',
+    fontWeight: 'bold',
+  },
 
-    ,
-    input: {
-        padding: '10px',
-        border: '2px solid #ddd',
-        borderRadius: '5px',
-        fontSize: '16px'
-    }
+  botaoSecundario: {
+    padding: '12px',
+    background: '#f0f0f0',
+    color: '#333',
+    border: 'none',
+    borderRadius: '5px',
+    fontSize: '16px',
+    cursor: 'pointer',
+    fontWeight: 'bold',
+  },
 
-    ,
-    botao: {
-        padding: '12px',
-        background: '#667eea',
-        color: 'white',
-        border: 'none',
-        borderRadius: '5px',
-        fontSize: '16px',
-        cursor: 'pointer',
-        fontWeight: 'bold'
-    }
+  botaoMenu: {
+    padding: '20px',
+    background: '#667eea',
+    color: 'white',
+    border: 'none',
+    borderRadius: '10px',
+    fontSize: '18px',
+    cursor: 'pointer',
+    fontWeight: 'bold',
+  },
 
-    ,
-    botaoSecundario: {
-        padding: '12px',
-        background: '#f0f0f0',
-        color: '#333',
-        border: 'none',
-        borderRadius: '5px',
-        fontSize: '16px',
-        cursor: 'pointer',
-        fontWeight: 'bold'
-    }
+  menuGrid: {
+    display: 'grid',
+    gridTemplateColumns: '1fr 1fr',
+    gap: '15px',
+    marginTop: '20px',
+  },
 
-    ,
-    botaoMenu: {
-        padding: '20px',
-        background: '#667eea',
-        color: 'white',
-        border: 'none',
-        borderRadius: '10px',
-        fontSize: '18px',
-        cursor: 'pointer',
-        fontWeight: 'bold'
-    }
+  // Estilos para Tela de Inspeção
+  containerInspecao: {
+    minHeight: '100vh',
+    background: '#192161',
+    padding: '20px',
+    fontFamily: 'Arial, sans-serif',
+  },
 
-    ,
-    menuGrid: {
-        display: 'grid',
-        gridTemplateColumns: '1fr 1fr',
-        gap: '15px',
-        marginTop: '20px'
-    }
+  cardInspecao: {
+    background: 'white',
+    borderRadius: '8px',
+    padding: '30px',
+    maxWidth: '1200px',
+    margin: '0 auto',
+    border: '2px solid #000',
+  },
 
-    ,
+  tituloInspecao: {
+    fontSize: '24px',
+    fontWeight: 'bold',
+    marginBottom: '20px',
+    color: '#000',
+  },
 
-    // Estilos para Tela de Inspeção
-    containerInspecao: {
-        minHeight: '100vh',
-        background: '#192161',
-        padding: '20px',
-        fontFamily: 'Arial, sans-serif'
-    }
+  secaoSuperior: {
+    marginBottom: '30px',
+  },
 
-    ,
-    cardInspecao: {
-        background: 'white',
-        borderRadius: '8px',
-        padding: '30px',
-        maxWidth: '1200px',
-        margin: '0 auto',
-        border: '2px solid #000'
-    }
+  inputGroupInline: {
+    display: 'flex',
+    alignItems: 'center',
+    gap: '10px',
+    marginBottom: '15px',
+  },
 
-    ,
-    tituloInspecao: {
-        fontSize: '24px',
-        fontWeight: 'bold',
-        marginBottom: '20px',
-        color: '#000'
-    }
+  inputGroupBlock: {
+    marginBottom: '15px',
+  },
 
-    ,
-    secaoSuperior: {
-        marginBottom: '30px'
-    }
+  labelInspecao: {
+    fontWeight: 'bold',
+    color: '#000',
+    marginBottom: '5px',
+    display: 'block',
+  },
 
-    ,
-    inputGroupInline: {
-        display: 'flex',
-        alignItems: 'center',
-        gap: '10px',
-        marginBottom: '15px'
-    }
+  inputInspecao: {
+    flex: 1,
+    padding: '8px',
+    border: '1px solid #ccc',
+    borderRadius: '4px',
+    fontSize: '14px',
+  },
 
-    ,
-    inputGroupBlock: {
-        marginBottom: '15px'
-    }
+  botaoCriar: {
+    padding: '8px 20px',
+    background: '#d3d3d3',
+    border: 'none',
+    borderRadius: '4px',
+    cursor: 'pointer',
+    fontWeight: 'bold',
+  },
 
-    ,
-    labelInspecao: {
-        fontWeight: 'bold',
-        color: '#000',
-        marginBottom: '5px',
-        display: 'block'
-    }
+  gridPneus: {
+    display: 'flex',
+    justifyContent: 'space-between',
+    alignItems: 'flex-start',
+    marginBottom: '30px',
+    position: 'relative',
+  },
 
-    ,
-    inputInspecao: {
-        flex: 1,
-        padding: '8px',
-        border: '1px solid #ccc',
-        borderRadius: '4px',
-        fontSize: '14px'
-    }
+  colunaPneus: {
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    gap: '20px',
+  },
 
-    ,
-    botaoCriar: {
-        padding: '8px 20px',
-        background: '#d3d3d3',
-        border: 'none',
-        borderRadius: '4px',
-        cursor: 'pointer',
-        fontWeight: 'bold'
-    }
+  pneuBox: {
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    gap: '5px',
+  },
 
-    ,
-    gridPneus: {
-        display: 'flex',
-        justifyContent: 'space-between',
-        alignItems: 'flex-start',
-        marginBottom: '30px',
-        position: 'relative'
-    }
+  botaoPneu: {
+    padding: '10px 20px',
+    background: 'white',
+    border: '2px solid #000',
+    borderRadius: '4px',
+    fontWeight: 'bold',
+    cursor: 'pointer',
+    minWidth: '120px',
+  },
 
-    ,
-    colunaPneus: {
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center',
-        gap: '20px'
-    }
+  botaoAcao: {
+    padding: '6px 12px',
+    background: '#d3d3d3',
+    border: 'none',
+    borderRadius: '4px',
+    fontSize: '12px',
+    cursor: 'pointer',
+    fontWeight: 'bold',
+  },
 
-    ,
-    pneuBox: {
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center',
-        gap: '5px'
-    }
+  itemAdicionado: {
+    fontSize: '11px',
+    color: '#666',
+    padding: '2px 8px',
+    background: '#f0f0f0',
+    borderRadius: '3px',
+    marginTop: '3px',
+  },
 
-    ,
-    botaoPneu: {
-        padding: '10px 20px',
-        background: 'white',
-        border: '2px solid #000',
-        borderRadius: '4px',
-        fontWeight: 'bold',
-        cursor: 'pointer',
-        minWidth: '120px'
-    }
+  conectoresVertical: {
+    width: '2px',
+    height: '100px',
+    background: '#000',
+  },
 
-    ,
-    botaoAcao: {
-        padding: '6px 12px',
-        background: '#d3d3d3',
-        border: 'none',
-        borderRadius: '4px',
-        fontSize: '12px',
-        cursor: 'pointer',
-        fontWeight: 'bold'
-    }
+  conectoresHorizontal: {
+    width: '180px',
+    height: '2px',
+    background: '#000',
+    alignSelf: 'center',
+    marginTop: '60px',
+    marginBottom: '60px',
+  },
 
-    ,
-    itemAdicionado: {
-        fontSize: '11px',
-        color: '#666',
-        padding: '2px 8px',
-        background: '#f0f0f0',
-        borderRadius: '3px',
-        marginTop: '3px'
-    }
+  secaoObservacoes: {
+    marginBottom: '20px',
+  },
 
-    ,
-    conectoresVertical: {
-        width: '2px',
-        height: '100px',
-        background: '#000'
-    }
+  textareaInspecao: {
+    width: '100%',
+    minHeight: '100px',
+    padding: '10px',
+    border: '1px solid #ccc',
+    borderRadius: '4px',
+    fontSize: '14px',
+    resize: 'vertical',
+    boxSizing: 'border-box',
+  },
 
-    ,
-    conectoresHorizontal: {
-        width: '180px',
-        height: '2px',
-        background: '#000',
-        alignSelf: 'center',
-        marginTop: '60px',
-        marginBottom: '60px'
-    }
+  botoesFinais: {
+    display: 'flex',
+    gap: '10px',
+  },
 
-    ,
-    secaoObservacoes: {
-        marginBottom: '20px'
-    }
+  botaoFinalizar: {
+    padding: '12px 30px',
+    background: '#28a745',
+    color: 'white',
+    border: 'none',
+    borderRadius: '4px',
+    fontSize: '16px',
+    fontWeight: 'bold',
+    cursor: 'pointer',
+  },
 
-    ,
-    textareaInspecao: {
-        width: '100%',
-        minHeight: '100px',
-        padding: '10px',
-        border: '1px solid #ccc',
-        borderRadius: '4px',
-        fontSize: '14px',
-        resize: 'vertical',
-        boxSizing: 'border-box'
-    }
+  botaoVoltar: {
+    padding: '12px 30px',
+    background: '#6c757d',
+    color: 'white',
+    border: 'none',
+    borderRadius: '4px',
+    fontSize: '16px',
+    fontWeight: 'bold',
+    cursor: 'pointer',
+  },
 
-    ,
-    botoesFinais: {
-        display: 'flex',
-        gap: '10px'
-    }
+  // Estilos para Histórico
+  cardLargo: {
+    background: 'white',
+    borderRadius: '10px',
+    padding: '30px',
+    maxWidth: '900px',
+    width: '100%',
+    boxShadow: '0 10px 40px rgba(0,0,0,0.2)',
+    maxHeight: '90vh',
+    overflowY: 'auto',
+  },
 
-    ,
-    botaoFinalizar: {
-        padding: '12px 30px',
-        background: '#28a745',
-        color: 'white',
-        border: 'none',
-        borderRadius: '4px',
-        fontSize: '16px',
-        fontWeight: 'bold',
-        cursor: 'pointer'
-    }
+  listaInspecoes: {
+    display: 'flex',
+    flexDirection: 'column',
+    gap: '15px',
+    marginBottom: '20px',
+  },
 
-    ,
-    botaoVoltar: {
-        padding: '12px 30px',
-        background: '#6c757d',
-        color: 'white',
-        border: 'none',
-        borderRadius: '4px',
-        fontSize: '16px',
-        fontWeight: 'bold',
-        cursor: 'pointer'
-    }
+  itemInspecao: {
+    background: '#f8f9fa',
+    padding: '15px',
+    borderRadius: '8px',
+    border: '1px solid #e0e0e0',
+  },
 
-    ,
+  summary: {
+    cursor: 'pointer',
+    color: '#667eea',
+    fontWeight: 'bold',
+    marginTop: '10px',
+  },
 
-    // Estilos para Histórico
-    cardLargo: {
-        background: 'white',
-        borderRadius: '10px',
-        padding: '30px',
-        maxWidth: '900px',
-        width: '100%',
-        boxShadow: '0 10px 40px rgba(0,0,0,0.2)',
-        maxHeight: '90vh',
-        overflowY: 'auto'
-    }
+  detalhes: {
+    marginTop: '10px',
+    paddingLeft: '10px',
+  },
 
-    ,
-    listaInspecoes: {
-        display: 'flex',
-        flexDirection: 'column',
-        gap: '15px',
-        marginBottom: '20px'
-    }
+  detalhesPneu: {
+    padding: '5px 0',
+    borderBottom: '1px solid #eee',
+  },
 
-    ,
-    itemInspecao: {
-        background: '#f8f9fa',
-        padding: '15px',
-        borderRadius: '8px',
-        border: '1px solid #e0e0e0'
-    }
+  textoVazio: {
+    textAlign: 'center',
+    color: '#999',
+    padding: '40px',
+  },
 
-    ,
-    summary: {
-        cursor: 'pointer',
-        color: '#667eea',
-        fontWeight: 'bold',
-        marginTop: '10px'
-    }
+  relatorioBox: {
+    background: '#f8f9fa',
+    padding: '20px',
+    borderRadius: '8px',
+    marginBottom: '20px',
+  },
+};
 
-    ,
-    detalhes: {
-        marginTop: '10px',
-        paddingLeft: '10px'
-    }
+// Estilos do Header
+export const headerStyles = {
+  headerContainer: {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    gap: '20px',
+    padding: '12px 20px',
+    background: 'linear-gradient(90deg, #1f2a6aff 0%, #2a3388 100%)',
+    color: '#fff'
+  },
+  headerLeft: {
+    display: 'flex',
+    alignItems: 'center',
+    gap: '12px'
+  },
+  headerLogo: {
+    width: '48px',
+    height: '48px',
+    objectFit: 'contain'
+  },
+  headerTitle: {
+    margin: 0,
+    fontSize: '18px'
+  },
+  headerNav: {
+    marginLeft: 'auto'
+  },
+  headerNavButton: {
+    background: 'transparent',
+    border: '1px solid rgba(255,255,255,0.2)',
+    color: '#fff',
+    padding: '6px 10px',
+    borderRadius: '6px',
+    cursor: 'pointer'
+  },
+  headerRight: {
+    display: 'flex',
+    alignItems: 'center',
+    gap: '10px'
+  },
+  headerUser: {
+    fontWeight: '600'
+  },
+  headerLogout: {
+    background: '#ff6b6b',
+    color: '#fff',
+    border: 'none',
+    padding: '6px 10px',
+    borderRadius: '6px',
+    cursor: 'pointer'
+  }
+};
 
-    ,
-    detalhesPneu: {
-        padding: '5px 0',
-        borderBottom: '1px solid #eee'
-    }
-
-    ,
-    textoVazio: {
-        textAlign: 'center',
-        color: '#999',
-        padding: '40px'
-    }
-
-    ,
-    relatorioBox: {
-        background: '#f8f9fa',
-        padding: '20px',
-        borderRadius: '8px',
-        marginBottom: '20px'
-    }
-}
-
-    ;
+// Mergiar headerStyles em styles para import único
+Object.assign(styles, headerStyles || {});
