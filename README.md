@@ -1,3 +1,7 @@
+<div align="center">
+	<img src="./.github/assets/logo-ulbra.png" alt="logo" height="250">
+</div>
+
 # Sistema de Inspeção de Pneus
 
 Projeto front-end em React para gerenciar inspeções de pneus — telas de cadastro, histórico, relatórios e uma interface para inspeção.
